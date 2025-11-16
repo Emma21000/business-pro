@@ -1,12 +1,14 @@
 "use client";
 import { aboutSection } from "../../data/aboutSection";
 import { cardData } from "../../data/card";
+import { contactUs } from "../../data/contactUs";
 import { heroData } from "../../data/hero";
 import { knowmore } from "../../data/knowMore";
 import { ourServices } from "../../data/ourServices";
 import { testimonials } from "../../data/testimonials";
 import AboutSection from "./components/AboutSection";
 import Card from "./components/Card";
+import ContactUs from "./components/ContactUs";
 import Hero from "./components/Hero";
 import KnowMore from "./components/KnowMore";
 import OurServices from "./components/OurServices";
@@ -22,6 +24,7 @@ export default function Home() {
       <Card data={cardData} />
       <Testimonials data={testimonials} />
       <KnowMore data={knowmore} />
+      <ContactUs data={contactUs} />
     </div>
   );
 }
