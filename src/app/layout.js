@@ -3,6 +3,8 @@ import { navbarData } from "../../data/navbar";
 import { EB_Garamond, Playfair_Display } from  'next/font/google'
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import ContactUs from "./components/ContactUs";
+import { contactUs } from "../../data/contactUs";
 
 const playfair_display = Playfair_Display({
 subsets: ["latin"],
@@ -23,6 +25,7 @@ export default  function RootLayout({ children }) {
         <body className={`${playfair_display.variable} ${eb_garamond.variable}`}>
           <Navbar data={navbarData} />
           {children}
+          <ContactUs data={contactUs} />
         </body>
       </html>
     );

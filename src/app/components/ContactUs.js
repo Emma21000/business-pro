@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ContactUs({ data }) {
   return (
-    <div className='w-full h-full bg-[#0c4897] py-16'>
+    <div className='w-full h-full bg-[#0c4897] pt-16'>
       <p className='lg:w-1/2 w-2/3 text-white text-5xl lg:text-6xl font-head text-start mx-auto tracking-wider mb-14' >{data.name}</p>
         <form className='flex flex-col text-white w-3/4 items-center justify-center mx-auto gap-y-12' >
             <div className='grid lg:grid-cols-2 grid-cols-1 lg:w-2/3 w-11/12 gap-x-10 gap-y-8'>
